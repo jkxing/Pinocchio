@@ -525,12 +525,13 @@ public:
 
 MAKE_HASH(StlVtx, return (int)(p[0] * 100000. + p[1] * 200000. + p[2] * 400000.););
 
+#include <map>
 void Mesh::readStl(istream &strm)
 {
     int i;
     int lineNum = 0;
     
-    hash_map<StlVtx, int> vertexIdx;
+    map<StlVtx, int> vertexIdx;
     
     vector<int> lastIdxs;
     

@@ -51,8 +51,9 @@ namespace _HASH_NAMESPACE {
         }; \
     }
 #else //MICROSOFT VC 2005
-#include <hash_map>
-#include <hash_set>
+#include <unordered_map>
+#include <unordered_set>
+
 
 #define _HASH_NAMESPACE stdext
 

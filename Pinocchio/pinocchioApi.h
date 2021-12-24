@@ -82,5 +82,5 @@ vector<Vector3> PINOCCHIO_API refineEmbedding(TreeType *distanceField, const vec
                                               const vector<Vector3> &initialEmbedding, const Skeleton &skeleton);
 
 //to compute the attachment, create a new Attachment object
-
+vector<Sphere> m_sampleMedialSurface(TreeType* distanceField, double tol = defaultTreeTol);
 #endif //PINOCCHIOAPI_H

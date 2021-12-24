@@ -35,7 +35,7 @@ PinocchioOutput autorig(const Skeleton &given, const Mesh &m)
     TreeType *distanceField = constructDistanceField(newMesh);
 
     //discretization
-    vector<Sphere> medialSurface = sampleMedialSurface(distanceField);
+    vector<Sphere> medialSurface = m_sampleMedialSurface(distanceField);
 
     vector<Sphere> spheres = packSpheres(medialSurface);
 

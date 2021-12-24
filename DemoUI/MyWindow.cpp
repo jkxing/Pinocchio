@@ -39,7 +39,7 @@ MyWindow::MyWindow() : Fl_Gl_Window(1024, 768, "Pinocchio"), flatShading(true), 
 {
     size_range(20, 20, 5000, 5000);
     end();
-
+    cnt = 0;
     resetTransform();
     win = this;
     Fl::add_idle(idle);
@@ -172,6 +172,8 @@ void MyWindow::draw() {
     vector<const Mesh *> ms(meshes.size());
     for(i = 0; i < (int)meshes.size(); ++i) {
         ms[i] = &(meshes[i]->getMesh());
+        ms[i]->writeObj("output_mesh_" + to_string(cnt) + "_.obj");
+        cnt++;
     }
 
     //shadows

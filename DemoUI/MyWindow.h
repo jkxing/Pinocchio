@@ -57,7 +57,7 @@ private:
     Transform<> transform;
     vector<DisplayMesh *> meshes;
     vector<LineSegment> lines;
-
+    int cnt;
     void resetTransform();
     void initGL();
     void drawMesh(const Mesh &m, bool flatShading, Vector3 trans = Vector3());
