@@ -82,5 +82,9 @@ vector<Vector3> PINOCCHIO_API refineEmbedding(TreeType *distanceField, const vec
                                               const vector<Vector3> &initialEmbedding, const Skeleton &skeleton);
 
 //to compute the attachment, create a new Attachment object
-vector<Sphere> m_sampleMedialSurface(TreeType* distanceField, double tol = defaultTreeTol);
+vector<Sphere> PINOCCHIO_API m_sampleMedialSurface(TreeType* distanceField, double tol = defaultTreeTol);
+vector<Sphere> PINOCCHIO_API m_packSpheres(const vector<Sphere>& spheres, int maxSpheres);
+PtGraph PINOCCHIO_API m_connectSamples(TreeType* distanceField, const vector<Sphere>& spheres);
+vector<Vector3> PINOCCHIO_API m_embeddings(const PtGraph& graph, const vector<Sphere>& spheres,const Skeleton& skeleton);
+vector<Vector3> PINOCCHIO_API m_refineEmbedding(TreeType* distanceField, const vector<Vector3>& medialSurface, const vector<Vector3>& initialEmbedding, const Skeleton& skeleton);
 #endif //PINOCCHIOAPI_H

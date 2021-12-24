@@ -17,9 +17,6 @@
     <ClCompile Include="discretization.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="embedding.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="graphutils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -44,16 +41,16 @@
     <ClCompile Include="pinocchioApi.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="refinement.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="skeleton.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mAPI.cpp">
+    <ClCompile Include="m_discrete.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="m_discrete.cpp">
+    <ClCompile Include="m_embedding.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="m_refine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -131,7 +131,6 @@ vector<Vector3> optimizeEmbedding1D(vector<Vector3> fineEmbedding, vector<Vector
 }
 
 
-
 //refines embedding
 vector<Vector3> refineEmbedding(TreeType *distanceField, const vector<Vector3> &medialSurface,
                                 const vector<Vector3> &initialEmbedding, const Skeleton &skeleton)
